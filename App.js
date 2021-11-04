@@ -21,7 +21,10 @@ const AppNavigator = createStackNavigator({
     screen: ProjectsScreen
   }
 },{
-    initialRouteName: "Home"
+    initialRouteName: "Home",
+    contentOptions: {
+      activeTintColor: '#e91e63'
+  }
 });
 
 const AppContainer = createAppContainer(AppNavigator);
