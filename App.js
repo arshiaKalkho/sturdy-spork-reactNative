@@ -17,9 +17,11 @@ const AppNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen
   },
-  About: {
+  Projects: {
     screen: ProjectsScreen
   }
+},{
+    initialRouteName: "Home"
 });
 
 const AppContainer = createAppContainer(AppNavigator);
