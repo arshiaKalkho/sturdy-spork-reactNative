@@ -4,32 +4,31 @@ import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 export default class HomeScreen extends Component {
 
-  static navigationOptions = {
+static navigationOptions = {
     drawerLabel: 'Home',
     drawerIcon: ({ tintColor }) => (
-      <Image
+    <Image
         source={require('../assets/splash.png')}
         style={[styles.icon, { tintColor: tintColor }]}
-      />
+    />
     ),
-  };
-
-  render() {
+};
+render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Home Screen</Text>
         <Button
-          title="Go to projects"
-          onPress={() => this.props.navigation.navigate('About')}
+            title="Go to projects"
+            onPress={() => this.props.navigation.navigate('Projects')}
         />
-      </View>
+    </View>
     )
-  }
+}
 }
 
 const styles = StyleSheet.create({
-  icon: {
+icon: {
     width: 24,
     height: 24,
-  }
+}
 });
